@@ -1,0 +1,28 @@
+:root{--bg:#faf7f2;--ink:#2b2724;--muted:#7a716a;--accent:#b5402e;--line:#e6dfd5;--max:42rem}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a18;--ink:#ece6df;--muted:#a59b92;--accent:#e2735f;--line:#34302c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 Georgia,"Iowan Old Style","Times New Roman",serif}
+a{color:var(--accent);text-underline-offset:3px}
+header.site,main,footer.site{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+header.site{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;padding-top:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+nav a{margin-left:1.1rem;font:15px/1 system-ui,sans-serif;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.intro{padding:2.5rem 0 1rem}
+.intro h1{margin:0;font-size:2.4rem;line-height:1.15}
+.intro p{margin:.3rem 0 0;color:var(--muted)}
+ul.posts{list-style:none;padding:0;margin:1rem 0 3rem}
+ul.posts li{border-top:1px solid var(--line)}
+ul.posts a{display:block;padding:1.1rem 0;color:var(--ink);text-decoration:none}
+ul.posts a:hover .title{color:var(--accent)}
+.date{display:block;font:13px/1.4 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.title{display:block;font-size:1.35rem;font-weight:700;margin:.15rem 0}
+.summary{display:block;color:var(--muted)}
+article.post{padding:2rem 0 1rem}
+article.post h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 1.2rem}
+article.post img,article.post iframe{max-width:100%;border-radius:6px}
+article.post img{height:auto;display:block;margin:1.5rem auto}
+article.post iframe{display:block;margin:1.5rem auto;border:0}
+blockquote{margin:1.5rem 0;padding-left:1rem;border-left:3px solid var(--line);color:var(--muted)}
+.back{margin:0 0 3rem;font:15px system-ui,sans-serif}
+footer.site{padding-top:1.5rem;padding-bottom:2.5rem;border-top:1px solid var(--line);font:14px system-ui,sans-serif;color:var(--muted)}
